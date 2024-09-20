@@ -2,17 +2,18 @@ img {
     height: 50px;
     width: 50px;
 }
-#dashboard{
+
+#dashboard {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
-#dashboard a{
-    margin-right: 30px;
+
+#dashboard a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 0px;
-    margin: 20px;
+    padding: 0;
+    margin: 20px 30px 20px 20px;
     display: inline-block;
     font-weight: 700;
     font-size: 14px;
@@ -20,64 +21,68 @@ img {
     font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
 }
+
 #dashboard #Find {
-    padding: 0px 30px;
+    padding: 0 30px;
     margin-left: 20%;
 }
+
+#dashboard #Find:hover {
+    color: darkgreen;
+}
+
 #dashboard #Sign {
-    padding-left: 30;
-    padding-right: 30;
     border: 2px solid black;
-    padding: 10px;
     border-radius: 30px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 10px;
     letter-spacing: 3px;
+    padding: 10px 30px;
 }
 
-#dashboard #Find:hover{
-    color:darkgreen
-}
-
-#dashboard #Sign:hover{
+#dashboard #Sign:hover {
     background-color: lightgray;
-}
-#dashboard #Sign:active{
-
-}
-
-#dashboard #Join:hover{
-    opacity: 75%;
 }
 
 #dashboard #Join {
-    padding-left: 30;
-    padding-right: 30;
     border: 2px solid black;
-    padding: 10px;
     border-radius: 30px;
-    background-color:black;
+    background-color: black;
     margin-top: 10px;
-    margin-left: 0px;
-    color:white;
+    margin-left: 0;
+    color: white;
+    padding: 10px 30px;
 }
 
-.Mother{
+#dashboard #Join:hover {
+    opacity: 0.75;
+}
+
+#dashboard #Logo {
+    padding: 0;
+    margin: 0;
+}
+
+.Mother {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    list-style-type: none;
     font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .Drinks {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px;
-    padding-left: 0;
+    background-color: rgb(32, 79, 40);
+    color: white;
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 600px;
+    width: 12%;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px 5px 20px 20px;
+}
+
+.Drinks h1 {
+    font-size: 20px;
 }
 
 .Drinks h2 {
@@ -101,57 +106,42 @@ img {
     text-decoration: none;
     font-size: 15px;
     display: block;
-    /* padding: 10px; */
     text-align: left;
-    padding-left: 0px;
-    /* transition: background 0.3s ease; */
-    
-    /* padding-inline-start: 0px; */
+    padding-left: 0;
 }
 
-.Drinks{
-    background-color: rgb(32, 79, 40);
-    height: 600px;
-    width: 12%;
-    list-style-type: none;
-    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
-    padding-left: 20px;
-    padding-right: 5px;
-}
-
-.Drinks h1{
-    font-size: 20px;
-    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.Menu-blank{
+.Menu-blank {
     font-size: 10px;
     color: gray;
     height: 40px;
     margin-bottom: 30px;
 }
 
-.Categories{
+.Categories {
     font-size: 20px;
-    font-weight: 900px;
+    font-weight: 900;
 }
 
-#dashboard #Logo{
-    padding: 0px;
-    margin: 0px;
+.Categories img {
+    width: 150px;
+    height: 150px;
 }
 
-#dashboard2{
+#HotCoffee1 {
+    width: 150px;
+    height: 100px;
+}
+
+#dashboard2 {
     display: flex;
     justify-content: space-around;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin-right: 0;
+    margin-top: 0;
     width: 20%;
 }
 
-#dashboard2 a{
-    margin-right: 0px;
+#dashboard2 a {
+    margin-right: 0;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
@@ -163,25 +153,14 @@ img {
     letter-spacing: 1px;
 }
 
-.nav-background{
-    background-color: lightgray;
-}
-
-#dashboard2 #Menu{
+#dashboard2 #Menu {
     margin-left: 90px;
 }
 
-#dashboard2 #Menu:active{
+#dashboard2 #Menu:active {
     text-decoration: underline;
 }
 
-.Categories img{
-    width: 150px;
-    height: 150px;
+.nav-background {
+    background-color: lightgray;
 }
-
-#HotCoffee1 {
-    width: 150px;
-    height: 100px;
-}
-
