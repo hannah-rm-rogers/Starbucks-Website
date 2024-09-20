@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .Mother {
+            display: flex;
+        }
+        .Categories {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .Drinks {
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="dashboard">
+        <a id="Logo" href="cat.html"><img src="StarbucksLogo.png" alt=""></a>
+        <a href="Menu.html">Menu</a>
+        <a href="Rewards.html">Rewards</a>
+        <a href="GiftCards.html">Gift Cards</a>
+        <a id="Find" href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z">Find a Store</a>
+        <a id="Sign" href="SignIn.html">Sign In</a>
+        <a id="Join" href="JoinNow.html">Join Now</a>
+    </nav>
+    <hr>
+    
+    <div class="nav-background">
+        <nav id="dashboard2">
+            <a id="Menu" href="Menu.html">Menu</a>
+            <a id="Featured" href="Featured.html">Featured</a>
+            <a id="Previous" href="Previous.html">Previous</a>
+            <a id="Favorites" href="Favorites.html">Favorites</a>
+        </nav>
+    </div>
+
+    <hr>
+
+    <div class="Mother">
+        <div class="Drinks">
+            <h1>Drinks</h1>
+            <ul id="DrinkList">
+                <li><a href="#" onclick="showSection('iced-energy'); return false;">Iced energy</a></li>
+                <li><a href="#" onclick="showSection('hot-coffees'); return false;">Hot Coffees</a></li>
+                <li><a href="#" onclick="showSection('cold-coffees'); return false;">Cold Coffees</a></li>
+                <li><a href="#" onclick="showSection('refreshers'); return false;">Starbucks Refreshers® Beverages</a></li>
+                <li><a href="#" onclick="showSection('frappuccino'); return false;">Frappuccino® Blended Beverages</a></li>
+                <li><a href="#" onclick="showSection('iced-tea'); return false;">Iced Tea & Lemonade</a></li>
+                <li><a href="#" onclick="showSection('hot-teas'); return false;">Hot Teas</a></li>
+                <li><a href="#" onclick="showSection('milk-juice'); return false;">Milk, Juice & More</a></li>
+                <li><a href="#" onclick="showSection('bottled'); return false;">Bottled Beverages</a></li>
+            </ul>
+        </div>
+        <div class="Categories">
+            <div class="Menu-blank">
+                <h2>Menu/blank</h2>
+            </div>
+
+            <section id="iced-energy" class="content-section">
+                <h3>Iced energy</h3>
+                <img id="RedBullPic" src="./Pics/RedBull.jpg" alt="RedBull">
+                <p>This is a RedBull</p>
+                <img id="MonsterPic" src="./Pics/Monster.png" alt="Monster">
+                <p>This is a Monster</p>
+            </section>
+
+            <section id="hot-coffees" class="content-section">
+                <h4>Hot Coffees</h4>
+                <img id="HotCoffee1" src="./Pics/HotCoffee1.jpg" alt="HotCoffee1">
+                <p>This is a hottt coffee...</p>
+                <img id="HotCoffee2" src="./Pics/HotCoffee2.jpg" alt="HotCoffee2">
+            </section>
+
+            <!-- Add more sections for other drink categories -->
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.getElementsByClassName('content-section');
+            for (let section of sections) {
+                section.classList.remove('active');
+            }
+            // Show selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+        // Show default section
+        showSection('iced-energy');
+    </script>
+    
+</body>
+</html>

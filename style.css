@@ -1,0 +1,187 @@
+img {
+    height: 50px;
+    width: 50px;
+}
+#dashboard{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#dashboard a{
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+}
+#dashboard #Find {
+    padding: 0px 30px;
+    margin-left: 20%;
+}
+#dashboard #Sign {
+    padding-left: 30;
+    padding-right: 30;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 0px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+#dashboard #Find:hover{
+    color:darkgreen
+}
+
+#dashboard #Sign:hover{
+    background-color: lightgray;
+}
+#dashboard #Sign:active{
+
+}
+
+#dashboard #Join:hover{
+    opacity: 75%;
+}
+
+#dashboard #Join {
+    padding-left: 30;
+    padding-right: 30;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    background-color:black;
+    margin-top: 10px;
+    margin-left: 0px;
+    color:white;
+}
+
+.Mother{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Drinks {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    padding-left: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.Drinks h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 30%;
+}
+
+.Drinks ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Drinks ul li {
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.Drinks ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    /* padding: 10px; */
+    text-align: left;
+    padding-left: 0px;
+    /* transition: background 0.3s ease; */
+    
+    /* padding-inline-start: 0px; */
+}
+
+.Drinks{
+    background-color: rgb(32, 79, 40);
+    height: 600px;
+    width: 12%;
+    list-style-type: none;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.Drinks h1{
+    font-size: 20px;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Menu-blank{
+    font-size: 10px;
+    color: gray;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.Categories{
+    font-size: 20px;
+    font-weight: 900px;
+}
+
+#dashboard #Logo{
+    padding: 0px;
+    margin: 0px;
+}
+
+#dashboard2{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 20%;
+}
+
+#dashboard2 a{
+    margin-right: 0px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-background{
+    background-color: lightgray;
+}
+
+#dashboard2 #Menu{
+    margin-left: 90px;
+}
+
+#dashboard2 #Menu:active{
+    text-decoration: underline;
+}
+
+.Categories img{
+    width: 150px;
+    height: 150px;
+}
+
+#HotCoffee1 {
+    width: 150px;
+    height: 100px;
+}
+
